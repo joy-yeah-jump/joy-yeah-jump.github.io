@@ -4,9 +4,19 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 	<title>Portfolio</title>
 </head>
 <body>
+  <b><p>Today is <u><label id='today'></label></u></p></b>
+  <br>
+  <div id="pi" class="alert alert-primary"></div>
   <p>Hello, World!</p>
+  <py-script>
+  print('Hello, World!')
+  pyscript.write('today', 'id test 1')
+  pyscript.write('pi', 'id test 2')
+  </py-script>
 </body>
 </html>
