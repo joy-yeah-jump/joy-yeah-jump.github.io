@@ -14,9 +14,8 @@
 	<title>web python app</title>
 </head>
 <body>
-  <b><p>Today is <u><label id='today'></label></u></p></b>
-  <div id="pi" class="alert alert-primary"></div>
   <input type="text" id="test-input"/>
+  <button id="submit-button" type="submit" pys-onClick="my_function">OK</button>
   <div id="test-output"></div>
   <py-env>
     - math
@@ -29,8 +28,8 @@
   from ortools.linear_solver import pywraplp
   
   print('Hello, World!')
-  pyscript.write('today', 'id test 1')
-  pyscript.write('pi', 'id test 2')
+<!--   pyscript.write('today', 'id test 1')
+  pyscript.write('pi', 'id test 2') -->
   </py-script>
 </body>
 </html>
