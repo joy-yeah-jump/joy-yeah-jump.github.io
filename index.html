@@ -6,23 +6,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
         <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-        <py-config type="json">
-          {
-            "packages": ["pandas", "./ortools-9.4.1874-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"]
-          }
-        </py-config>
 	<title>web python app</title>
 </head>
 <body>
   <input type="text" id="test-input"/>
   <button id="submit-button" type="submit" pys-onClick="my_function">OK</button>
   <div id="test-output"></div>
+  <py-env>
+  - pandas
+  - ./dist/myapp8763-0.0.1-py3-none-any.whl
+  </py-env>
   <py-script>
   import pandas as pd
   from ortools.linear_solver import pywraplp
   
   print('Hello, World!')
-<!--   pyscript.write('today', 'id test 1')
+  <!--   pyscript.write('today', 'id test 1')
   pyscript.write('pi', 'id test 2') -->
   </py-script>
 </body>
