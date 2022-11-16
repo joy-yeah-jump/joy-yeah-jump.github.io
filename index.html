@@ -8,7 +8,8 @@
         <script defer src="https://pyscript.net/latest/pyscript.js"></script>
         <py-config type="json">
           {
-            "packages": ["pandas", "pywraplp"]
+<!--             "packages": ["pandas", "pywraplp"] -->
+	    "packages" : ["pandas"]
           }
         </py-config>
 	<title>web python app</title>
@@ -21,7 +22,7 @@
   <py-script>
   import math
   import pandas as pd
-  from ortools.linear_solver import pywraplp
+<!--   from ortools.linear_solver import pywraplp -->
   
   print('Hello, World!')
   pyscript.write('today', 'id test 1')
